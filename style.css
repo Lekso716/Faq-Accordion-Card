@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    /* border: 1px solid red; */
+}
+
+.super-main{
+    
+    height: 100%;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px; 
+    
+}
+
+.card{
+    position: relative;
+    width: auto;
+    border-radius: 23px;
+    background-color: white;
+    margin-top: 148px;
+    padding: 0px 25px 0px 25px;
+    padding-bottom: 48px;
+}
+.shadow{
+    margin-left: 20px;
+    margin-bottom: 28px;
+
+}
+.main-logo{
+    position: absolute;
+    width: 237px;
+    left: 45px;
+    top: -110px;       
+}
+.shadow-desktop{
+    display: none;
+}
+.box-desktop{
+    display: none;
+}
+.main-logo-desktop{
+    display: none;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;;
+}
+.title{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+
+}
+.options{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    
+    color:#4B4C5F;
+    
+}
+.accordion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin-top: 15px;
+    
+}
+.test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.description{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color:#787887;
+    margin-top: 13px;
+    width: 260px;
+    text-align: left;
+}
+.line{
+    width: 100%;
+    height:1px;
+    background-color:#E8E8EA;
+    margin-top: 16px;
+}
+.panel{
+    display:none;
+}
+
+.accordion.active > .test > .options{
+    font-family:'Outfit', sans-serif;
+    font-weight: 700;
+    transition: all 0.25s ease-out ;
+
+}
+
+.accordion.active > .test > .arrow{
+    transform: rotate(180deg);
+    transition: all 0.25s ease-out ;
+}
+
+.accordion.active > .panel{
+    display:block;
+}
+
+.accordion.active{
+    display: flex;
+    transition: all 1s ease-out ;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1440px){
+    .super-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .values{
+        display: flex;
+        flex-direction: column;
+        width: 350px; 
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        width: 920px;
+        height: 509px;
+        padding-right: 95px;
+        justify-content: space-between;
+        overflow: hidden;
+        
+    }
+    .main-logo{
+        display: none;
+    }
+    .shadow{
+        display: none;
+    }   
+    .shadow-desktop{
+        display: block;
+        width: 964px;
+        height: 568px;
+        margin-left: -534px;
+        height: auto;
+        transform: translate(-73px, -70px);
+
+    }
+    .main-logo-desktop{
+            display: block;
+        position: absolute;
+        top: 0;
+        transform: translate(-117px, 54px);
+  
+    }
+    .box-desktop{
+        display: block;
+        width: 119px;
+        height: 112px;
+        top: 370px;
+        left: -55px;
+        position: absolute;
+        z-index: 1;
+    }
+    .box1{
+        
+        justify-content: flex-start;
+    }
+    .options{
+        font-size: 14px;
+    }
+    .test1{
+        position: relative;
+    }
+    .options:hover{
+        color:#F47B56;
+    }
+}
